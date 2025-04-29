@@ -1,0 +1,21 @@
+api_platform:
+    version: 1.0.0
+    show_webby: false
+    enable_docs : true
+    enable_entrypoint : true
+    enable_swagger_ui: false
+    use_symfony_listeners: true
+    defaults:
+        normalization_context:
+            skip_null_values: false
+        pagination_enabled: true
+    formats:
+        json: [ 'application/json' ]
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    swagger:
+        versions: [3]
+        api_keys:
+            apiKey:
+                name: Authorization
+                type: header
