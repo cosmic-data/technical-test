@@ -27,8 +27,8 @@ Your goal is to expose and enhance APIs around these entities using API Platform
 - `Task`
 ## 🧩 Provided Credentials
 
-- `login : user1 / pass : user1`
-- `login : user2 / pass : user2`
+- `login : user1@site.com / pass : user1`
+- `login : user2@site.com / pass : user2`
 
 ---
 
