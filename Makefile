@@ -21,5 +21,6 @@ install:
 	bin/console lexik:jwt:generate-keypair --skip-if-exists
 	bin/console assets:install
 	bin/console cache:clear
-	bin/console doctrine:migration:migrate -q
+	bin/console d:s:d -f
+	bin/console d:s:u -f
 	bin/console doctrine:fixtures:load -q

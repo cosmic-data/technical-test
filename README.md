@@ -10,6 +10,8 @@ $ make cli
 # install dependencies
 $ make install
 ```
+You can now access the API on **http://localhost:8888/api**
+
 # 🧪 Technical Test – API Platform: Task Management Extension
 
 ## ⏱ Duration: 1 Hour
@@ -41,9 +43,10 @@ Your goal is to expose and enhance APIs around these entities using API Platform
   - `POST`
   - `PUT`
   - `DELETE`
-2. **Serialization logic**:
-    - Only allow authenticated users to perform any operation.
-    - A user should **only see and modify their own tasks**.
+
+2. **Security**:
+  - Only allow authenticated users to perform any operation.
+  - A user should **only see and modify his own tasks**.
 
 3. **Serialization logic**:
   - Default output: `id`, `title`, `dueDate`
